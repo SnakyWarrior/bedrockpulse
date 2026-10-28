@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+
+# Production build outputs
+dist/
+build/
+
+# Android generated files
+android/app/build/
+android/.gradle/
+android/build/
+android/local.properties
+android/captures/
+android/.idea/
+
+# Environment & Logs
+.env
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Network captures
+*.har
+
+# Old implementation kept for reference
+legacy/
+
+# Local tooling
+.claude/
+
+# Local-only source plugins
+src/sources/private/
+
+# Old Capacitor wrapper (unused)
+android/
+
+# Build info
+*.tsbuildinfo

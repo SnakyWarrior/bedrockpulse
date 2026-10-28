@@ -1,0 +1,11 @@
+import { createElement } from 'react';
+
+const ICONS = {
+  cross:
+    '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 8"><path fill="currentColor" fill-rule="evenodd" d="M.5.5h1v1h.966v1h-1v-1H.5zm7 1h-1v-1h1zm-2 1v-1h1v1zm-1 1h1v-1h-1zm0 1v-1h-1v-1h-1v1h1v1h-1v1h-1v1h-1v1h1v-1h1v-1h1v-1zm0 0h1v1h-1zm1.034 2H6.5v1h1v-1h-.966v-1h-1z"/></svg>'
+};
+
+/** Ore UI icon (same pixel art as the library's own icons). */
+export function OreIcon({ name }: { name: keyof typeof ICONS }) {
+  return createElement('ore-icon', { dangerouslySetInnerHTML: { __html: ICONS[name] } });
+}
